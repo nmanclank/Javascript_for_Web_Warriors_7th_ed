@@ -1,9 +1,9 @@
 /*  JavaScript 7th Edition
     Chapter 4
-    Hands-on Project 4-1
+    Hands-on Project 4-4
 
     Filename: styles.css
-*/   
+*/
 
 /* apply a natural box layout model to all elements */
 * {
@@ -64,66 +64,82 @@ header {
 
 /* main content */
 article {
+   position: relative;
    width: 960px;
-   height: 250px;
+   height: 300px;
    text-align: left;
    background: #FFDB70;
    position: relative;
 }
 
-article h2 {
-   font-weight: bold;
-   font-size: 24px;
-   padding: 10px;
+article > h2 {
+   font-weight: normal;
+   font-size: 2em;
+   padding: 20px 0 10px 0;
+   text-align: center;
+   margin: 0 0 20px 0;
 }
 
-form {
-   padding-left: 30px;
+div#warning {
+   position: absolute;
+   top: 180px;
+   left: 70px;
+   color: red;
 }
 
 label {
-   display: inline-block;
-   width: 400px;
    float: left;
+   display: block;
    clear: left;
-   margin-bottom: 20px;
+   width: 110px;
+   margin-bottom: 10px;
+   margin-left: 70px;
 }
 
 input {
+   display: block;
    float: left;
-   margin-bottom: 20px;
+   margin-left: 20px;
+   margin-bottom: 10px;
    text-align: right;
-   padding-right: 5px;
+   width: 100px;
 }
 
-div#totalBox {
-   width: 175px;
+input#change {
+   padding-right: 15px;
+}
+
+aside#bills {
+   position: absolute;
+   top: 50px;
+   left: 480px;
+}
+
+aside#coins {
+   position: absolute;
+   top: 50px;
+   left: 680px;
+}
+
+aside h2 {
+   font-size: 1.2em;
+   margin: 0;
+   text-align: center;
+   margin: 20px 0 10px;
+}
+
+aside div:nth-of-type(odd) {
    float: left;
-   outline: 1px solid gray;
-   height: 20px;
-   line-height: 20px;
-   font-size: 15px;
-   text-align: right;
-   background-color: white;
-   padding-right: 5px;
-}
-
-span {
-   display: inline-block;
-   float: left;
-   margin-left: 8px;
-}
-
-span#msgBox {
-   color: red;
-   font-size: 1.4;
-}
-
-div#border {
-   float: left;
+   width: 100px;
    clear: left;
-   height: 2px;
-   background-color: blue;
-   width: 700px;
-   margin-bottom: 15px;
+}
+
+aside div:nth-of-type(even) {
+   float: left;
+   width: 30px;
+   height: 30px;
+   outline: 1px solid gray;
+   text-align: center;
+   line-height: 30px;
+   background-color: ivory;
 }

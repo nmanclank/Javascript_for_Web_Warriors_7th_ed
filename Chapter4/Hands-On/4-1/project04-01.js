@@ -4,7 +4,7 @@
 
       Application to calculate total moving cost
 
-      Date:   10/5/24 
+      Date:   10/5/24    
 
       Filename: project04-01.js
 */

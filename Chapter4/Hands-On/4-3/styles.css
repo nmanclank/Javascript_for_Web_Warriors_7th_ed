@@ -1,9 +1,9 @@
 /*  JavaScript 7th Edition
     Chapter 4
-    Hands-on Project 4-1
+    Hands-on Project 4-3
 
     Filename: styles.css
-*/   
+*/
 
 /* apply a natural box layout model to all elements */
 * {
@@ -65,65 +65,37 @@ header {
 /* main content */
 article {
    width: 960px;
-   height: 250px;
+   height: 600px;
    text-align: left;
    background: #FFDB70;
    position: relative;
 }
 
 article h2 {
-   font-weight: bold;
-   font-size: 24px;
-   padding: 10px;
+   font-weight: normal;
+   font-size: 2em;
+   padding: 20px 0 10px 0;
+   text-align: center;
+   margin: 0;
 }
 
-form {
-   padding-left: 30px;
+article textarea#comment {
+   display: block;
+   width: 75%; 
+   margin: 10px auto;
+   height: 350px; 
+   padding: 15px; 
+   text-align: left;
+   font-size: 1.3em;
+   border: 1px solid rgb(102, 51, 0);
 }
 
-label {
-   display: inline-block;
-   width: 400px;
-   float: left;
-   clear: left;
-   margin-bottom: 20px;
+div {
+   width: 500px;
+   margin-left: 12.5%;
 }
 
-input {
-   float: left;
-   margin-bottom: 20px;
-   text-align: right;
-   padding-right: 5px;
-}
-
-div#totalBox {
-   width: 175px;
-   float: left;
-   outline: 1px solid gray;
-   height: 20px;
-   line-height: 20px;
-   font-size: 15px;
-   text-align: right;
-   background-color: white;
-   padding-right: 5px;
-}
-
-span {
-   display: inline-block;
-   float: left;
-   margin-left: 8px;
-}
-
-span#msgBox {
+div#warningBox {
    color: red;
-   font-size: 1.4;
-}
-
-div#border {
-   float: left;
-   clear: left;
-   height: 2px;
-   background-color: blue;
-   width: 700px;
-   margin-bottom: 15px;
+   margin-top: 15px;
 }

@@ -1,9 +1,9 @@
 /*  JavaScript 7th Edition
     Chapter 4
-    Hands-on Project 4-1
+    Hands-on Project 4-5
 
     Filename: styles.css
-*/   
+*/
 
 /* apply a natural box layout model to all elements */
 * {
@@ -42,10 +42,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
    line-height: 1;
-   width: 960px;
+   max-width: 600px;
    background: white;
-   margin: 0 auto;
-   font-family: Verdana, Geneva, sans-serif; 
+   margin: 20px auto;
+   font-family: Arial, Helvetica, sans-serif; 
+   border: 4px outset gray;
 }
 
 ol, ul {
@@ -54,9 +55,9 @@ ol, ul {
 
 /* page header */
 header {
-   background: #5472B2;
+   background: #FFC340;
    width: 100%;
-   color: #FFFFFF;
+   color: black;
    font-size: 48px;
    text-align: center;
    line-height: 1.5em;
@@ -64,66 +65,52 @@ header {
 
 /* main content */
 article {
-   width: 960px;
-   height: 250px;
-   text-align: left;
-   background: #FFDB70;
-   position: relative;
-}
-
-article h2 {
-   font-weight: bold;
-   font-size: 24px;
-   padding: 10px;
+   text-align: center;
+   background: white;
 }
 
 form {
-   padding-left: 30px;
+   display: flex;
+   flex-flow: row wrap;
 }
 
-label {
-   display: inline-block;
-   width: 400px;
-   float: left;
-   clear: left;
-   margin-bottom: 20px;
+h2 {
+   margin: 20px 0px;
+   font-size: 1.2em;
+   font-weight: normal;
+   letter-spacing: 0.1em;
+   
 }
+
+h3 {
+   font-size: 1em;
+   font-weight: normal;
+   font-family: sans-serif;
+}   
 
 input {
-   float: left;
-   margin-bottom: 20px;
+   display: block;
+   margin: 10px auto;
+   width: 100px;
    text-align: right;
-   padding-right: 5px;
+   font-size: 1.2em;
+   padding: 4px;
 }
 
-div#totalBox {
-   width: 175px;
-   float: left;
-   outline: 1px solid gray;
-   height: 20px;
-   line-height: 20px;
-   font-size: 15px;
-   text-align: right;
-   background-color: white;
-   padding-right: 5px;
+div {
+   display: block;
+   flex: 1 1 100px;
 }
 
-span {
-   display: inline-block;
-   float: left;
-   margin-left: 8px;
+div#arrow {
+   line-height: 70px;
+   font-size: 70px;
 }
 
-span#msgBox {
-   color: red;
-   font-size: 1.4;
-}
-
-div#border {
-   float: left;
-   clear: left;
-   height: 2px;
-   background-color: blue;
-   width: 700px;
-   margin-bottom: 15px;
+footer {
+   margin: 20px 0px 15px;
+   text-align: center;
+   font-size: 1.1em;
+   line-height: 1.2;
+   padding: 0px 20px;
 }
