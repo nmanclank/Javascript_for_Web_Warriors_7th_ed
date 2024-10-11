@@ -4,9 +4,8 @@
       Project 05-05
 
       Project to create a Concentration game with flipping tiles
-      Author: 
-      Date:   
-
+      Date:  10/10/24 
+      
       Filename: project05-05.js
 */
 
