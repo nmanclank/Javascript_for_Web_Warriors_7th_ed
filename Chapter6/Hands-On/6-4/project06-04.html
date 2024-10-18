@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 6
+      Hands-on Project 6-4
+      Date:   10/17/24
+
+      Filename: project06-04.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 6-4</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="project06-04.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 6-4
+      </h1>
+   </header>
+
+   <article>
+      <h1>Select Your Vehicle</h1>
+      <form>
+         <fieldset>
+            <legend>Make</legend>
+            <select id="make" size="4">
+               <option>Select Make</option>
+               <option>Buick</option>
+               <option>Chevrolet</option>
+               <option>Honda</option>
+               <option>Nissan</option>
+               <option>Toyota</option>            
+            </select>            
+         </fieldset>
+
+         <fieldset>
+            <legend>Model</legend>
+            <select id="model" size="5">
+               <option>Select Model</option>
+               <option class="Buick">Enclave</option> 
+               <option class="Buick">Encore</option>
+               <option class="Buick">LaCrosse</option>
+               <option class="Chevrolet">Colorado</option>
+               <option class="Honda">Accord</option> 
+               <option class="Honda">Civic</option>
+               <option class="Honda">Oddyssey</option>
+               <option class="Honda">Pilot</option>
+               <option class="Nissan">370Z</option> 
+               <option class="Nissan">Altima</option>
+               <option class="Nissan">Leaf</option>
+               <option class="Nissan">Rogue</option>            
+               <option class="Nissan">Sentra</option>  
+               <option class="Toyota">4Runner</option> 
+               <option class="Toyota">Camry</option>
+               <option class="Toyota">Corolla</option>
+               <option class="Toyota">RAV4</option>            
+               <option class="Toyota">Sienna</option>            
+            </select>            
+         </fieldset>
+
+         <fieldset>
+            <legend>Trim</legend>
+            <select id="trim" size="4">
+               <option>Select Trim</option>
+               <option class="Enclave">Convenience Group 4dr SUV (3.6L 6cyl 6A)</option>
+               <option class="Enclave">Leather Group 4dr SUV (3.6L 6cyl 6A)</option>
+               <option class="Enclave">Premium Group 4dr SUV (3.6L 6cyl 6A)</option>
+               <option class="Encore">4dr SUV (1.4L 4cyl Turbo 6A)</option>
+               <option class="Encore">Convenience 4dr SUV (1.4L 4cyl Turbo 6A)</option>
+               <option class="Encore">Premium 4dr SUV (1.4L 4cyl Turbo 6A)</option>
+               <option class="LaCrosse">4dr Sedan (2.4L 4cyl gas/electric hybrid 6A)</option>
+               <option class="LaCrosse">Leather Group 4dr Sedan AWD (3.6L 6cyl 6A)</option>
+               <option class="LaCrosse">Premium I Group 4dr Sedan (3.6L 6cyl 6A))</option>
+               <option class="LaCrosse">Premium II Group 4dr Sedan (3.6L 6cyl 6A)</option>          
+               <option class="Accord">EX 2dr Coupe (2.4L 4cyl 6M)</option>
+               <option class="Accord">EX-L 4dr Sedan (2.4L 4cyl CVT)</option>
+               <option class="Accord">LX 4dr Sedan (2.4L 4cyl 6M)</option>
+               <option class="Accord">Sport 4dr Sedan (2.4L 4cyl 6M)</option>
+               <option class="Civic">EX 4dr Sedan (1.8L 4cyl CVT)</option>
+               <option class="Civic">LX 2dr Coupe (1.8L 4cyl 5M)</option>
+               <option class="Civic">4dr Sedan (2.4L 4cyl gas/electric hybrid 6A)</option>
+               <option class="Civic">Natural Gas 4dr Sedan (1.8L 4cyl 5A)</option>
+               <option class="Colorado">Z71 4dr Crew Cab (3.6L 6cyl 8spd)</option>
+               <option class="Oddyssey">EX 4dr Minivan (3.5L 6cyl 6A)</option>
+               <option class="Oddyssey">LX 4dr Minivan (3.5L 6cyl 6A)</option>
+               <option class="Oddyssey">Touring 4dr Minivan (3.5L 6cyl 6A)</option> 
+               <option class="Pilot">EX 4dr SUV (3.5L 6cyl 5A)</option>
+               <option class="Pilot">LX 4dr SUV (3.5L 6cyl 5A)</option>              
+               <option class="370Z">2dr Coupe (3.7L 6cyl 7A)</option>
+               <option class="370Z">Sport 2dr Coupe (3.7L 6cyl 6M)</option>
+               <option class="370Z">Touring 2dr Coupe (3.7L 6cyl 7A)</option>
+               <option class="Altima">2.5 4dr Sedan (2.5L 4cyl CVT)</option>
+               <option class="Altima">3.5 SL 4dr Sedan (3.5L 6cyl CVT)</option>
+               <option class="Leaf">S 4dr Hatchback (electric DD)</option>
+               <option class="Leaf">SL 4dr Hatchback (electric DD)</option>
+               <option class="Leaf">SV 4dr Hatchback (electric DD)</option>
+               <option class="Rogue">S 4dr SUV (2.5L 4cyl CVT)</option>
+               <option class="Rogue">SV 4dr SUV AWD (2.5L 4cyl CVT)</option>             
+               <option class="Sentra">FE+ S 4dr Sedan (1.8L 4cyl CVT)</option>
+               <option class="Sentra">S 4dr Sedan (1.8L 4cyl 6M)</option>
+               <option class="Sentra">SL 4dr Sedan (1.8L 4cyl CVT)</option> 
+               <option class="4Runner">Limited 4dr SUV (4.0L 6cyl 5A)</option>
+               <option class="4Runner">SR5 4dr SUV (4.0L 6cyl 5A)</option>
+               <option class="4Runner">Trail 4dr SUV 4WD (4.0L 6cyl 5A)</option>
+               <option class="4Runner">TRD PRO 4dr SUV 4WD (4.0L 6cyl 5A)</option>
+               <option class="Camry">LE 4dr Sedan (2.5L 4cyl 6A)</option>
+               <option class="Camry">SE 4dr Sedan (2.5L 4cyl 6A)</option>
+               <option class="Camry">XLE 4dr Sedan (3.5L 6cyl 6A)</option>
+               <option class="Camry">XSE 4dr Sedan (3.5L 6cyl 6A)</option>
+               <option class="Corolla">L 4dr Sedan (1.8L 4cyl 4A)</option>
+               <option class="Corolla">LE Plus 4dr Sedan (1.8L 4cyl CVT)</option>             
+               <option class="Corolla">S 4dr Sedan (1.8L 4cyl CVT)</option>
+               <option class="RAV4">LE 4dr SUV (2.5L 4cyl 6A)</option>
+               <option class="RAV4">Limited 4dr SUV (2.5L 4cyl 6A)</option>  
+               <option class="RAV4">XLE 4dr SUV (2.5L 4cyl 6A)</option>   
+               <option class="RAV4">LE 4dr SUV (2.5L 4cyl 6A)</option>
+               <option class="Sienna">L 7-Passenger 4dr Minivan (3.5L 6cyl 6A)</option>  
+               <option class="Sienna">Limited 7-Passenger 4dr Minivan (3.5L 6cyl 6A)</option>                     
+            </select>              
+         </fieldset>
+         
+         <input type="button" value="Select" id="selectVehicle" />
+        
+      </form>
+      <p id="vehicle"></p>
+   </article>      
+</body>
+</html>

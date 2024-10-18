@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 6
+      Hands-on Project 6-2
+
+
+      Date:   10/17/24
+
+      Filename: project06-02.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 6-2</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="project06-02.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 6-2
+      </h1>
+   </header>
+
+   <article>
+      <form id="govLinks" name="govLinks">
+      <h1>Government Sites on the Web</h1>
+
+      <p>Select a site from one of the drop-down lists below.</p>
+      <table>
+         <tr><td>Executive Branch</td>
+             <td><select name="executive" id="executive" class="optionLinks">
+                 <option value="#">Select a website</option>
+                 <option value="http://www.whitehouse.gov">The White House</option>
+                 <option value="http://www.usda.gov">Department of Agriculture</option>
+                 <option value="http://www.doc.gov">Department of Commerce</option>
+                 <option value="http://www.defenselink.mil">Department of Defense</option>
+                 <option value="http://www.ed.gov">Department of Education</option>
+                 <option value="http://www.energy.gov">Department of Energy</option>
+                 <option value="http://www.hhs.gov">Department of Health and Human Services</option>
+                 <option value="http://www.whitehouse.gov/homeland">Department of Homeland Security</option>
+                 <option value="http://www.hud.gov">Department of Housing and Urban Development</option>
+                 <option value="http://www.doi.gov">Department of the Interior</option>
+                 <option value="http://www.usdoj.gov">Department of Justice</option>
+                 <option value="http://www.dol.gov">Department of Labor</option>
+                 <option value="http://www.state.gov">Department of State</option>
+                 <option value="http://www.ustreas.gov">Department of the Treasury</option>
+                 </select>
+             </td>
+         </tr>
+         <tr><td>Legislative Branch</td>
+             <td><select name="legislative" id="legislative" class="optionLinks">
+                 <option value="#">Select a website</option>
+                 <option value="http://www.house.gov">House website</option>
+                 <option value="http://clerk.house.gov/">Clerk of the House</option>
+                 <option value="http://www.senate.gov">Senate website</option>
+                 <option value="http://www.senate.gov/general/contact_information/senators_cfm.cfm">Senators' websites</option>
+                 <option value="http://www.senate.gov/artandhistory/history/common/generic/Senate_Historical_Office.htm">Senate Historic Office</option>
+                 <option value="http://www.cq.com">Congressional Quarterly</option>
+                 <option value="http://www.loc.gov/">Library of Congress</option>
+                 <option value="http://www.gao.gov/">Government Accountability Office</option>
+                 <option value="http://www.cbo.gov/">Congressional Budget Office</option>
+                 </select>
+             </td>
+         </tr>
+         <tr><td>Judicial Branch</td>
+             <td><select name="judicial" id="judicial" class="optionLinks">
+                 <option value="#">Select a website</option>
+                 <option value="http://www.uscourts.gov">U.S. Courts</option>
+                 <option value="https://www.supremecourt.gov/">U.S. Supreme Court</option>
+                 <option value="http://www.uscourts.gov/courtsofappeals.html">U.S. Courts of Appeals</option>
+                 </select>
+             </td>
+         </tr>
+         <tr><td>State Governments</td>
+             <td><select name="state" id="state" class="optionLinks">
+                 <option value="#">Select a website</option>
+                 <option value="http://www.statelocalgov.net/index.cfm">State and Local Government on the Net</option>
+                 <option value="http://www.statelocalgov.net/state-al.cfm">Alabama</option>
+                 <option value="http://www.statelocalgov.net/state-ak.cfm">Alaska</option>
+                 <option value="http://www.statelocalgov.net/state-az.cfm">Arizona</option>
+                 <option value="http://www.statelocalgov.net/state-ar.cfm">Arkansas</option>
+                 <option value="http://www.statelocalgov.net/state-ca.cfm">California</option>
+                 <option value="http://www.statelocalgov.net/state-co.cfm">Colorado</option>
+                 <option value="http://www.statelocalgov.net/state-ct.cfm">Connecticut</option>
+                 <option value="http://www.statelocalgov.net/state-de.cfm">Delaware</option>
+                 <option value="http://www.statelocalgov.net/state-dc.cfm">District of Columbia</option>
+                 <option value="http://www.statelocalgov.net/state-fl.cfm">Florida</option>
+                 <option value="http://www.statelocalgov.net/state-ga.cfm">Georgia</option>
+                 <option value="http://www.statelocalgov.net/state-hi.cfm">Hawaii</option>
+                 <option value="http://www.statelocalgov.net/state-id.cfm">Idaho</option>
+                 <option value="http://www.statelocalgov.net/state-il.cfm">Illinois</option>
+                 <option value="http://www.statelocalgov.net/state-in.cfm">Indiana</option>
+                 <option value="http://www.statelocalgov.net/state-ia.cfm">Iowa</option>
+                 <option value="http://www.statelocalgov.net/state-ks.cfm">Kansas</option>
+                 <option value="http://www.statelocalgov.net/state-ky.cfm">Kentucky</option>
+                 <option value="http://www.statelocalgov.net/state-la.cfm">Louisana</option>
+                 <option value="http://www.statelocalgov.net/state-me.cfm">Maine</option>
+                 <option value="http://www.statelocalgov.net/state-md.cfm">Maryland</option>
+                 <option value="http://www.statelocalgov.net/state-ma.cfm">Massachusetts</option>
+                 <option value="http://www.statelocalgov.net/state-mi.cfm">Michigan</option>
+                 <option value="http://www.statelocalgov.net/state-mn.cfm">Minnesota</option>
+                 <option value="http://www.statelocalgov.net/state-ms.cfm">Mississippi</option>
+                 <option value="http://www.statelocalgov.net/state-mo.cfm">Missouri</option>
+                 <option value="http://www.statelocalgov.net/state-mn.cfm">Montana</option>
+                 <option value="http://www.statelocalgov.net/state-ne.cfm">Nebraska</option>
+                 <option value="http://www.statelocalgov.net/state-nv.cfm">Nevada</option>
+                 <option value="http://www.statelocalgov.net/state-nh.cfm">New Hampshire</option>
+                 <option value="http://www.statelocalgov.net/state-nj.cfm">New Jersey</option>
+                 <option value="http://www.statelocalgov.net/state-nm.cfm">New Mexico</option>
+                 <option value="http://www.statelocalgov.net/state-ny.cfm">New York</option>
+                 <option value="http://www.statelocalgov.net/state-nc.cfm">North Carolina</option>
+                 <option value="http://www.statelocalgov.net/state-nd.cfm">North Dakota</option>
+                 <option value="http://www.statelocalgov.net/state-oh.cfm">Ohio</option>
+                 <option value="http://www.statelocalgov.net/state-ok.cfm">Oklahoma</option>
+                 <option value="http://www.statelocalgov.net/state-or.cfm">Oregon</option>
+                 <option value="http://www.statelocalgov.net/state-pa.cfm">Pennsylvania</option>
+                 <option value="http://www.statelocalgov.net/state-ri.cfm">Rhode Island</option>
+                 <option value="http://www.statelocalgov.net/state-sc.cfm">South Carolina</option>
+                 <option value="http://www.statelocalgov.net/state-sd.cfm">South Dakota</option>
+                 <option value="http://www.statelocalgov.net/state-tn.cfm">Tennessee</option>
+                 <option value="http://www.statelocalgov.net/state-tx.cfm">Texas</option>
+                 <option value="http://www.statelocalgov.net/state-ut.cfm">Utah</option>
+                 <option value="http://www.statelocalgov.net/state-vt.cfm">Vermont</option>
+                 <option value="http://www.statelocalgov.net/state-va.cfm">Virginia</option>
+                 <option value="http://www.statelocalgov.net/state-wa.cfm">Washington</option>
+                 <option value="http://www.statelocalgov.net/state-wv.cfm">West Virginia</option>
+                 <option value="http://www.statelocalgov.net/state-wi.cfm">Wisconsin</option>
+                 <option value="http://www.statelocalgov.net/state-wy.cfm">Wyoming</option>
+                 </select>
+             </td>
+         </tr>
+      </table>
+      </form>     
+   </article>      
+</body>
+</html>
