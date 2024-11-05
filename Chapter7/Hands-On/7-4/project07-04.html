@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 7
+      Hands-on Project 7-4
+
+      Date:   11/05/24  
+
+      Filename: project07-04.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 7-4</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="project07-04.js" defer></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 7-4
+      </h1>
+   </header>
+
+   <article>
+      <h1>Customer Queue</h1>
+      
+      <section>
+      <div id="customerInput">
+         <label for="customerName">Customer</label>
+         <input type="text" id="customerName" name="customerName" /> <br />
+         
+         <input type="button" id="addButton" value="add" /> 
+         <input type="button" id="searchButton" value="search" />
+         <input type="button" id="removeButton" value="remove" /> 
+         
+         <p id="status"></p>
+         
+         
+      </div>
+      
+      <div id="customerBox">
+         <h1>Customer List <input id="topButton" value="Remove Top Customer" type="button" /></h1>
+         
+         <ol id="customerList">
+         </ol>
+      </div>
+   </section>
+   </article>
+</body>
+</html>
