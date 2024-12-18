@@ -1,0 +1,192 @@
+/*  JavaScript 7th Edition
+    Chapter 8
+    Hands-on Project 8-3
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+   width: 960px;
+   background: white;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* page header */
+header {
+   background: #5472B2;
+   width: 100%;
+   color: #FFFFFF;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.5em;
+   margin-bottom: 0;
+}
+
+
+
+/*-------------------- Project Styles ------------------*/
+
+section {
+   background-color: #FFDB70;
+   margin-top: 0;
+   padding-bottom: 20px;
+   user-select:none;
+   height: 480px;
+   position: relative;
+}
+
+section h1 {
+   font-size: 2.8em;
+   text-align: center;
+   margin: 0;
+   padding: 20px 0;
+}
+
+
+/* Styles for the Pizza Preview Image */
+
+div#previewBox {
+   width: 300px;
+   margin: 30px;
+   height: 300px;
+   position: absolute;
+   top: 50px;
+   left: 300px;
+   background: url(crust.png) center center /cover no-repeat;
+}
+
+div#previewBox img {
+   display: block;
+   width: 300px;
+   position: absolute;
+   top: 0px;
+   left: 0px;
+   clip: auto;
+}
+
+div#previewBox img.left {
+   clip: rect(0px, 150px, 300px, 0px);
+}
+
+div#previewBox img.right {
+   clip: rect(0px, 300px, 300px, 150px);
+}
+
+
+body > section > fieldset#pizzaOptions {
+   flex: 1 1 200px;
+   margin: 10px;
+   padding: 15px;
+   border: 1px solid rgb(191, 191, 191);  
+   width: 300px;
+}
+
+body > section fieldset#pizzaOptions label {
+   width: 180px;
+   float: left;
+   clear: left;
+   margin-bottom: 15px;
+}
+
+body > section fieldset#pizzaOptions input, body > section fieldset#pizzaOptions select {
+   float: left;
+   margin-bottom: 15px;
+}
+
+input#addToCart {
+   position: absolute;
+   height: 40px;
+   bottom: 10px;
+   right: 10px;
+   width: 150px;
+   border: 3px solid white;
+   box-shadow: 0px 0px 1px rgb(151, 95, 95), 0px 0px 3px rgb(151, 95, 95);
+   cursor: pointer;
+   position: absolute;
+   top: 390px;
+   left: 415px;
+}
+
+input#addToCart:hover {
+   background-color: rgba(151, 95, 95, 1);
+   color: rgb(231, 231, 231);
+}
+/* Styles for the Pizza Toppings Fieldset */
+
+body > section > fieldset#toppings {
+   flex: 1 1 200px;
+   margin: 10px;
+   padding: 15px;
+   border: 1px solid rgb(191, 191, 191);   
+   width: 300px;
+}
+
+body > section > fieldset#toppings label {
+   display: inline-block;
+   width: 120px;
+}
+
+aside {
+   position: absolute;
+   top: 60px;
+   left: 670px;
+   width: 270px;
+   paddng: 0;
+}
+
+aside h1 {
+   font-size: 1em;
+   margin: 0 0 10px 0;
+   font-weight: bold;
+   border-bottom: 1px solid black; 
+   padding: 0 0 10px 0;
+}
+
+aside div#cart {
+   font-size: 0.9em;
+}
+
+aside div#cart p {
+   margin-bottom: 10px;
+}
